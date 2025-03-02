@@ -149,7 +149,7 @@ def _run_tests(tests, number, table=None):
         else:
             result = '%16.2f ms' % (1000 * time)
         name = getattr(sys.modules[__name__], test).__doc__
-        print('%-35s %s' % (name, result))
+        print(f'{name: <35} {result}')
         if table is not None:
             table.append((name, '%.2f' % (1000 * time)))
 

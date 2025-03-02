@@ -213,7 +213,7 @@ class QRCode:
     """\
     Represents a (Micro) QR Code.
     """
-    __slots__ = ('matrix', 'mask', '_version', '_error', '_mode', '_matrix_size')
+    __slots__ = ('_error', '_matrix_size', '_mode', '_version', 'mask', 'matrix')
 
     def __init__(self, code):
         """\

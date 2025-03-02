@@ -1,4 +1,5 @@
-from typing import Any, AnyStr, Callable, IO, TextIO, Iterator, Iterable
+from typing import Any, AnyStr, Callable, IO, TextIO
+from collections.abc import Iterator, Iterable
 from .encoder import DataOverflowError as DataOverflowError
 
 __version__ : str

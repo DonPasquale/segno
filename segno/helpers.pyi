@@ -1,7 +1,7 @@
 from . import QRCode
 import decimal
 import datetime
-from typing import Iterable
+from collections.abc import Iterable
 
 
 def make_wifi_data(ssid: str, password: str | None, security: str | None,

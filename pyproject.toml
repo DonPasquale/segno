@@ -68,6 +68,7 @@ directory = "data"
 
 [tool.ruff]
 lint.select = ['E', 'F', 'N', 'W', 'UP', 'RUF']
+lint.ignore = ['I001', 'RUF022']
 exclude = ['examples', 'tests']
 line-length = 120
 

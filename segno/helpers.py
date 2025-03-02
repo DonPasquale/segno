@@ -329,7 +329,7 @@ def make_vcard_data(name, displayname, email=None, phone=None, fax=None,
         if not isinstance(birthday, str) or not _looks_like_datetime(birthday):
             raise ValueError('"birthday" does not seem to be a valid date or date/time representation')
         data.append(f'BDAY:{birthday}')
-    if lat and not lng or lng and not lat:
+    if (lat and not lng) or (lng and not lat):
         raise ValueError('Incomplete geo information, please specify latitude and longitude.')
     if lat and lng:
         data.append(f'GEO:{lat};{lng}')
@@ -547,7 +547,7 @@ def _make_epc_qr_data(name, iban, amount, text=None, reference=None, bic=None,
                 raise ValueError(f'Invalid encoding "{encoding}", use one of {encodings}')
         elif not isinstance(encoding, int) or not 1 <= encoding <= len(encodings):
             raise ValueError(f'Invalid encoding number only 1 .. 8 are allowed, got "{encoding}"')
-    if not text and not reference or text and reference:
+    if (not text and not reference) or (text and reference):
         raise ValueError('Either a text or a creditor reference (ISO 11649) must be provided')
     if text and not 0 < len(text) <= 140:
         raise ValueError(f'Invalid text, max. 140 characters are allowed, got "{len(text)}"')

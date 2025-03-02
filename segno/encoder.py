@@ -1178,7 +1178,7 @@ def normalize_version(version):
             version = consts.MICRO_VERSION_MAPPING[version.upper()]
         except (KeyError, AttributeError):
             error = True
-    if error or not 0 < version < 41 and version not in consts.MICRO_VERSIONS:
+    if error or (not 0 < version < 41 and version not in consts.MICRO_VERSIONS):
         raise ValueError(f'Unsupported version "{version}". '
                          f'Supported: {", ".join(sorted(consts.MICRO_VERSION_MAPPING.keys()))} and 1 .. 40')
     return version
@@ -1552,7 +1552,7 @@ class Segments:
     Note: len(segments) returns the number of Segments and not the data length;
     use segments.data_length
     """
-    __slots__ = ('segments', 'bit_length', 'modes')
+    __slots__ = ('bit_length', 'modes', 'segments')
 
     def __init__(self):
         self.segments = []
