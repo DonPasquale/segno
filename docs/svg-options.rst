@@ -208,7 +208,7 @@ Too squeeze the file size futher, omit the trailing newline character via ``nl=F
     >>> qrcode.save('penny-lane.svg', xmldecl=False, svgns=False, svgclass=None, lineclass=None, omitsize=True, nl=False)
 
 
-The result is almost he same, but you've saved a few (abt. 130) bytes
+The result is almost the same, but you've saved a few (abt. 130) bytes
 
 .. raw:: html
     :file: _static/svg/penny-lane-optimized.svg
