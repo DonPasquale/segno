@@ -15,7 +15,7 @@ from itertools import chain
 import shutil
 import nox
 
-_PY_VERSIONS = ('3.5', '3.6', '3.7', '3.8', '3.9', '3.10', '3.11', '3.12', '3.13', 'pypy3')
+_PY_VERSIONS = ('3.9', '3.10', '3.11', '3.12', '3.13', 'pypy3')
 _PY_DEFAULT_VERSION = sys.version[:4]
 
 nox.options.sessions = chain([f'test-{version}' for version in _PY_VERSIONS], ['coverage', 'lint'])
