@@ -696,7 +696,7 @@ def write_pdf(matrix, matrix_size, out, scale=1, border=None, dark='#000',
         write(b'\r\nendstream\r\nendobj\r\n')
         object_pos.append(f.tell())
         writestr(f'{len(object_pos)} 0 obj <</CreationDate(D:{creation_date})'
-                 f'/Producer({CREATOR})/Creator({CREATOR})\r\n>>\r\nendofbj\r\n')
+                 f'/Producer({CREATOR})/Creator({CREATOR})\r\n>>\r\nendobj\r\n')
         object_pos.append(f.tell())
         writestr(f'xref\r\n0 {len(object_pos)}\r\n0000000000 65535 f\r\n')
         for pos in object_pos[:-1]:
