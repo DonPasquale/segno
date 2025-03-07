@@ -1,10 +1,12 @@
 Changes
 =======
 
-1.6.2 -- 2024-mm-dd
+1.6.2 -- 2025-03-dd
 -------------------
 * Fixed packaging: include man page, source distribution did not
   contain all relevant files such as docs and test suite.
+* Fixed PDF creation: `PR #144 <https://github.com/heuer/segno/pull/144>`_
+  provided by `Mathias Winkel <https://github.com/dasmy>`_
 
 
 1.6.1 -- 2024-02-08
