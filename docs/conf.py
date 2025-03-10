@@ -27,7 +27,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 project = 'Segno'
-copyright = '2016 - 2024 Lars Heuer -- "QR Code" and "Micro QR Code" are registered trademarks of DENSO WAVE INCORPORATED.'  # noqa: E501
+copyright = '2016 - 2025 Lars Heuer -- "QR Code" and "Micro QR Code" are registered trademarks of DENSO WAVE INCORPORATED.'  # noqa: E501
 author = 'Lars Heuer'
 version = segno.__version__
 
@@ -41,27 +41,15 @@ show_authors = False
 todo_include_todos = True
 
 
-# -- Options for HTML output ----------------------------------------------
-
-# The theme to use for HTML and HTML Help pages.  See the documentation for
-# a list of builtin themes.
-html_theme = 'piccolo_theme'  # 'sphinx_rtd_theme'  #'classic' #'alabaster'
+html_theme = 'furo'  # 'sphinx_rtd_theme'  #'classic' #'alabaster'
 
 html_theme_options = {
-    'source_url': 'https://github.com/heuer/segno',
-    'source_icon': 'github',
     'globaltoc_collapse': False
 }
 
 html_static_path = ['_static']
 
-html_css_files = [
-    'css/custom.css',
-]
-
-html_js_files = [
-    'js/custom.js',
-]
+pygments_dark_style = 'lightbulb'
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'segnodoc'
