@@ -139,7 +139,7 @@ def run_create7q_tests(which=None, number=200, table=None):
     if which:
         tests = filter(lambda n: n[len('create7q_'):] in which, tests)
     _run_tests(tests, number, table)
- 
+
 
 
 def run_create30h_tests(which=None, number=200, table=None):
@@ -151,14 +151,14 @@ def run_create30h_tests(which=None, number=200, table=None):
     if which:
         tests = filter(lambda n: n[len('createbig_'):] in which, tests)
     _run_tests(tests, number, table)
- 
+
 
 
 def run_svg_tests(which=None, number=200, table=None):
 
     tests = ('svg_qrcode_path', 'svg_qrcode_rects',
              'svg_segno',)
- 
+
     if which:
         tests = filter(lambda n: n[len('svg_'):] in which, tests)
     _run_tests(tests, number, table)
