@@ -40,6 +40,7 @@ Contents
     plugins
     api
     changes
+    third-party-projects
 
 
 Indices and tables
