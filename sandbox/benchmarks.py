@@ -129,6 +129,41 @@ def run_create_tests(which=None, number=200, table=None):
     _run_tests(tests, number, table)
 
 
+
+def run_create7q_tests(which=None, number=200, table=None):
+
+    tests = ('create7q_qrcodegen',
+             'create7q_qrcode',
+             'create7q_segno',)
+
+    if which:
+        tests = filter(lambda n: n[len('create7q_'):] in which, tests)
+    _run_tests(tests, number, table)
+ 
+
+
+def run_create30h_tests(which=None, number=200, table=None):
+
+    tests = ('create30h_qrcodegen',
+             'create30h_qrcode',
+             'create30h_segno',)
+
+    if which:
+        tests = filter(lambda n: n[len('createbig_'):] in which, tests)
+    _run_tests(tests, number, table)
+ 
+
+
+def run_svg_tests(which=None, number=200, table=None):
+
+    tests = ('svg_qrcode_path', 'svg_qrcode_rects',
+             'svg_segno',)
+ 
+    if which:
+        tests = filter(lambda n: n[len('svg_'):] in which, tests)
+    _run_tests(tests, number, table)
+
+
 def run_png_tests(which=None, number=200, table=None):
     tests = ('png_qrcode',
              'png_segno',)
@@ -157,6 +192,9 @@ def _run_tests(tests, number, table=None):
 if __name__ == '__main__':
     table = []
     run_create_tests(table=table)
+    run_create7q_tests(table=table)
+    run_create30h_tests(table=table)
+    run_svg_tests(table=table)
     run_png_tests(table=table)
     with open(os.path.join(_output_dir(), 'results.csv'), 'w') as f:
         writer = csv.writer(f)
