@@ -661,8 +661,6 @@ def write_pdf(matrix, matrix_size, out, scale=1, border=None, dark='#000',
     creation_date = f"{time.strftime('%Y%m%d%H%M%S')}{(time.timezone // 3600):+03d}'{(abs(time.timezone) % 60):02d}'"
     cmds = []
     append_cmd = cmds.append
-    if scale > 1:
-        append_cmd(f'{scale} 0 0 {scale} 0 0 cm')
     if light is not None:
         # If the background color is defined, a rect is drawn in the background
         append_cmd('{} {} {} rg'.format(*to_pdf_color(light)))
@@ -671,6 +669,8 @@ def write_pdf(matrix, matrix_size, out, scale=1, border=None, dark='#000',
     # Set the stroke color only iff it is not black (default)
     if not _color_is_black(dark):
         append_cmd('{} {} {} RG'.format(*to_pdf_color(dark)))
+    if scale > 1:
+        append_cmd(f'{scale} 0 0 {scale} 0 0 cm')
     # Current pen position y-axis
     # Note: 0, 0 = lower left corner in PDF coordinate system
     y = get_symbol_size(matrix_size, scale=1, border=0)[1] + border - .5
