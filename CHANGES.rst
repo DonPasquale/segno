@@ -5,7 +5,9 @@ Changes
 -------------------
 * Fixed packaging: include man page, source distribution did not
   contain all relevant files such as docs and test suite.
+* Moved man page to the correct directory
 * Fixed PDF creation: `PR #144 <https://github.com/heuer/segno/pull/144>`_
+  and `PR #145 <https://github.com/heuer/segno/pull/145>`_
   provided by `Mathias Winkel <https://github.com/dasmy>`_
 * Merged `PR #143 <https://github.com/heuer/segno/pull/143>`_ (typo in docs)
   provided by `Marek Madejski <https://github.com/TrangOul>`_
