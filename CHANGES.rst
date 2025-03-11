@@ -1,7 +1,12 @@
 Changes
 =======
 
-1.6.2 -- 2025-03-11
+1.6.5 -- 2025-03-11
+-------------------
+* Fixed release notes
+
+
+1.6.4 -- 2025-03-11
 -------------------
 * Fixed packaging: include man page, source distribution did not
   contain all relevant files such as docs and test suite.
@@ -11,6 +16,11 @@ Changes
   provided by `Mathias Winkel <https://github.com/dasmy>`_
 * Merged `PR #143 <https://github.com/heuer/segno/pull/143>`_ (typo in docs)
   provided by `Marek Madejski <https://github.com/TrangOul>`_
+
+
+1.6.2 - 1.6.3 -- not released
+-----------------------------
+* Release 1.6.2 was labeled as 1.6.4 by mistake
 
 
 1.6.1 -- 2024-02-08
