@@ -1,9 +1,11 @@
 Changes
 =======
 
+
 1.6.5 -- 2025-03-11
 -------------------
-* Fixed release notes
+* Fixed release notes / aligned changelog to the mistake of skipping two minor 
+  releases
 
 
 1.6.4 -- 2025-03-11
