@@ -15,7 +15,7 @@ from . import encoder
 from .encoder import DataOverflowError
 from . import writers, utils
 
-__version__ = '1.6.4'
+__version__ = '1.6.5.dev'
 
 __all__ = ('make', 'make_qr', 'make_micro', 'make_sequence', 'QRCode',
            'QRCodeSequence', 'DataOverflowError')
