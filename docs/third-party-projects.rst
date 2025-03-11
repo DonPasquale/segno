@@ -10,7 +10,7 @@ qrcode-other-pattern
 --------------------
 `qrcode-other-pattern <https://github.com/six519/qrcode-other-pattern>`_ is
 a Segno plugin which changes the black modules into custom shapes instead of 
-squares. It requires `Pillow <https://python-pillow.org/>`_.
+squares. It requires `Pillow <https://pypi.org/project/pillow/>`_.
 
 
 online-qr-code-generator
