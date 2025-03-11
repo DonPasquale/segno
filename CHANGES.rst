@@ -1,7 +1,7 @@
 Changes
 =======
 
-1.6.2 -- 2025-03-dd
+1.6.2 -- 2025-03-11
 -------------------
 * Fixed packaging: include man page, source distribution did not
   contain all relevant files such as docs and test suite.
