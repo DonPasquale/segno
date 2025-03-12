@@ -2,7 +2,7 @@ Changes
 =======
 
 
-1.6.6 -- 2025-03-dd
+1.6.6 -- 2025-03-12
 -------------------
 * Fixed man page directory. This issue was introduced by mistake in the
   1.6.4/1.6.5 release and was reported by `Johannes Kastl <https://github.com/kastl-ars>`_
