@@ -52,7 +52,7 @@ def docs(session):
     import segno
     if 'dev' not in segno.__version__:
         shutil.copyfile(os.path.join(man, 'segno.1'),
-                        os.path.abspath(os.path.join(os.path.dirname(__file__), 'data/usr/share/man/man1/', 'segno.1')))
+                        os.path.abspath(os.path.join(os.path.dirname(__file__), 'data/share/man/man1/', 'segno.1')))
         session.log("'man/segno.1' has been modified, don't forget to commit")
 
 

@@ -2,6 +2,13 @@ Changes
 =======
 
 
+1.6.6 -- 2025-03-dd
+-------------------
+* Fixed man page directory. This issue was introduced by mistake in the
+  1.6.4/1.6.5 release and was reported by `Johannes Kastl <https://github.com/kastl-ars>`_
+  and `Michał Górny <https://github.com/mgorny>`_
+ 
+
 1.6.5 -- 2025-03-11
 -------------------
 * Fixed release notes / aligned changelog to the mistake of skipping two minor 
